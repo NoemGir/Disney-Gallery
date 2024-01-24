@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml" style="height:100%;">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Galerie</title>
+  <script type="text/javascript" src="Scripts/script.js"></script>
+  <script type="text/javascript" src="Scripts/galerie.js"></script>
+  <link rel="stylesheet" type="text/css" href="Styles/style.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="Styles/styleGalerie.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="Styles/GalerieImpression.css" media="print" />
+</head>
+
+<body oncontextmenu="return ChangeCouleur()">
+  <header>
+    <h1>
+      Galerie
+    </h1>
+    <nav>
+      <ul>
+        <li class="menu">
+          <a href="../Page_imposée/Livre_Choisi/livre_v2.xhtml">Partie
+            Imposée</a>
+        </li>
+        <li class="menu">
+          <a href="../acceuil.xhtml">Accueil</a>
+        </li>
+        <li class="menu" onmouseover="sousMenu()" onmouseout="EnleverSousMenu()">
+          <a href="">Partie Libre</a>
+          <ul id="id_SousMenu">
+            <li>
+              <a href="3_connexion.xhtml">Connexion</a>
+            </li>
+            <li>
+              <a href="1_presentation.xhtml">Présentation</a>
+            </li>
+            <li>
+              <a href="">Galerie</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <img alt="Chateau Disney" src="Images/Raiponse_réduit.jpg" />
+    <div id="DD">
+      <h2>
+        Disney Galery
+      </h2>
+      <p>
+        Les desings Disney en images !
+      </p>
+    </div>
+    <div class="conteneur">
+      <div class="Boutons">
+        <input type="button" value="selfie"
+          onclick="changeImageM1('Images/picture.jpeg', 'Les princesses en selfie')" />
+        <input type="button" value="robes" onclick="changeImageM1('Images/robes.jpg', 'Une variété de dentelles')" />
+        <input type="button" value="personnages fantastiques"
+          onclick="changeImageM2('id_image', 'id_quoi', 'Images/Fantastique.jpg', 'Au delà des frontières')" />
+        <input type="button" value="animaux"
+          onclick="changeImageM2('id_image', 'id_quoi', 'Images/animaux.jpg', 'Les plus mignons...')" />
+        <input type="button" value="mickey" onclick="changeImageM3('Images/mickey.jpg', 'La vedette de Disney !')" />
+        <input type="button" value="mystère"
+          onclick="changeImageM3('Images/princesses.jpg', 'Même les princesses ne sont pas parfaites')" />
+        <input type="button" value="Etat initial" onclick="EtatInitial()" />
+      </div>
+      <div class="TitreImage">
+        <b id="id_quoi">Bienvenue dans la galerie !</b>
+        <img id="id_image" src="Images/walt-disney_chateau.jpg" />
+      </div>
+      <aside>
+        <p>
+          En observant le character-designs des differentes animations du studio Disney, on peut facilement en déduire
+          le travail effectué sur chaque personnage. Tous les films sont en quelque sort uniques avec leur propre design
+          et magie. En effet, en prenant l'exemple du Génie de Alladin, celui-ci est fait tout en courbe alors que Mushu
+          dans Mulan posséde de nombeux angles plus pointu, révélant ainsi son caractère espiègle. L'univer des films
+          changeant, de meme que l'allure des decors et personnages et l'ambiance qui l'entours, les réalisateur se
+          doivent alors de changer également les methodes d'animations, et cherchent a toujours inover pour impressioner
+          le publique.
+        </p>
+      </aside>
+
+    </div>
+    <div class="Chaine">
+      <img src='Images/walt-disney_chateau.jpg'
+        onmouseover="Souris('Images/walt-disney_chateau.jpg', 'Bienvenue dans la galerie !')" />
+      <img src='Images/picture.jpeg' onmouseover="Souris('Images/picture.jpeg', 'Les princesses en selfie')" />
+      <img src='Images/robes.jpg' onmouseover="Souris('Images/robes.jpg', 'Une variété de dentelles')" />
+      <img src='Images/Fantastique.jpg' onmouseover="Souris('Images/Fantastique.jpg', 'Au delà des frontières')" />
+      <img src='Images/animaux.jpg' onmouseover="Souris('Images/animaux.jpg', 'Les plus mignons...')" />
+      <img src='Images/mickey.jpg' onmouseover="Souris('Images/mickey.jpg', 'La vedette de Disney !')" />
+      <img src='Images/princesses.jpg'
+        onmouseover="Souris('Images/princesses.jpg', 'Même les princesses ne sont pas parfaites')" />
+    </div>
+  </section>
+  <footer>
+    <a href="1_presentation.xhtml">⤌ Page précédente</a>
+    <div>
+      <p>Suivez disney sur:</p>
+      <a href="https://www.facebook.com/disneyfrance"><img src="../Pages_libres/Images/facebook.png" /></a>
+      <a href="https://www.instagram.com/DisneyFR/"><img src="../Pages_libres/Images/instagram.png" /></a>
+      <a href="https://www.twitter.com/disneyfrance"><img src="../Pages_libres/Images/tweeter.png" /></a>
+      <a href="https://www.pinterest.com/DisneyFR/"><img src="../Pages_libres/Images/pinterest.png" /></a>
+      <a href="https://www.youtube.com/DisneyFR/"><img src="../Pages_libres/Images/youtube.png" /></a>
+    </div>
+    <a href="3_connexion.xhtml"> Page Suivante ⤍</a>
+  </footer>
+</body>
+<script>
+  let Back = document.body.style
+  let temps
+  var bodyTag = document.body;
+  console.log("bodyTag : " + bodyTag);
+  var sectionTag = bodyTag.childNodes[1];
+  var conteneurTag = sectionTag.childNodes[2]
+  var TitreImgTag = conteneurTag.childNodes[1]
+  var bTag = TitreImgTag.firstChild
+  var p2Tag = bodyTag.childNodes[5];
+  var imgTag = p2Tag.firstChild;
+
+
+
+  console.log("p1Tag  : " + p1Tag.innerHTML);
+  console.log("bTag   : " + bTag.innerHTML);
+  console.log("imgTag : " + imgTag.src);
+</script>
+
+</html>

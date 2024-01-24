@@ -1,0 +1,80 @@
+
+header img{
+    width: 100%;
+    position: relative;
+    z-index:auto;
+}
+#DD{
+    position : absolute;
+    z-index: 2;
+    color:white;
+    padding:1em;
+    background-color: rgba(0,0,0,0.7);
+    font-size:1.5vw;
+    margin-left: 50%;
+    margin-top:-22%;
+    border-radius: 10px;
+}
+#DD:hover{
+    background-color: rgba(0,0,0,0.9)
+}
+
+
+section article{
+   text-indent:3vw;
+   font-size:2vw;
+   margin:2% 7% 2% 7%;
+   border:solid 2px black;
+   padding:5px;
+   font-family: Apple Chancery, cursive;
+}
+
+section article img{
+    width:10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text{
+    margin:2%;
+    margin-top:3%;
+}
+
+.text>p{
+    text-indent: 3vw;
+}
+
+.titre{
+   border:1px solid black;
+   padding : 1%;
+   padding-left:5%;
+   display: flex;
+   column-gap: 15px;
+   margin-bottom:3%
+}
+
+.paragrapheImg{
+    display:none;
+    margin:3%;
+    margin-top:-3%;
+}
+
+.text p{
+    text-indent:3vw;
+    padding:1em;
+}
+.text p+img{
+    width:75%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titre img{
+    width:20px;
+    margin-top:100%;
+}
+
+footer>a:last-of-type{
+    text-align: end;
+}

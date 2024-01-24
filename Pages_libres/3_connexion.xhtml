@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Connexion</title>
+    <script type="text/javascript" src="Scripts/connexion.js"></script>
+    <script type="text/javascript" src="Scripts/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="Styles/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="Styles/connection.css" media="all" />
+</head>
+
+<body>
+    <header>
+        <h1>
+            Connection
+        </h1>
+        <nav>
+            <ul>
+                <li class="menu">
+                    <a href="../Page_imposée/Livre_Choisi/livre_v2.xhtml">Partie
+                        Imposée</a>
+                </li>
+                <li class="menu">
+                    <a href="../acceuil.xhtml">Accueil</a>
+                </li>
+                <li class="menu" onmouseover="sousMenu()" onmouseout="EnleverSousMenu()">
+                    <a href="">Partie Libre</a>
+                    <ul id="id_SousMenu">
+                        <li>
+                            <a href="">Connexion</a>
+                        </li>
+                        <li>
+                            <a href="1_presentation.xhtml">Présentation</a>
+                        </li>
+                        <li>
+                            <a href="2_galerie.xhtml">Galerie</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="Images/Raiponse.jpg" />
+        <form id="id_fomulaire" onmouseover="Blanchir()" onmouseout="DeBlanchir()" method="get"
+            action="https://httpbin.org/get">
+            <fieldset>
+                <h1>
+                    Formulaire
+                </h1>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>
+                        Identifiant
+                    </h3>
+                </legend>
+                <input type="text" id="id_identifiant" name="identifiant" minlength="8" />
+                <span class="validity"></span>
+            </fieldset>
+            <fieldset class="Code">
+                <legend>
+                    <h3>
+                        Code d'accès
+                    </h3>
+                </legend>
+                <div class="BoutonCode1">
+                    <input type="button" name="button" value="1" onclick="EcrireCode('id_codeAffiché','1')" />
+                    <input type="button" name="button" value="7" onclick="EcrireCode('id_codeAffiché','7')" />
+                    <input type="button" name="button" value="2" onclick="EcrireCode('id_codeAffiché','2')" />
+                    <input type="button" name="button" value="0" onclick="EcrireCode('id_codeAffiché','0')" />
+                    <input type="button" name="button" value="8" onclick="EcrireCode('id_codeAffiché','8')" />
+                </div>
+                <div class="BoutonCode2">
+                    <input type="button" name="button" value="9" onclick="EcrireCode('id_codeAffiché','9')" />
+                    <input type="button" name="button" value="5" onclick="EcrireCode('id_codeAffiché','5')" />
+                    <input type="button" name="button" value="3" onclick="EcrireCode('id_codeAffiché','3')" />
+                    <input type="button" name="button" value="6" onclick="EcrireCode('id_codeAffiché','6')" />
+                    <input type="button" name="button" value="4" onclick="EcrireCode('id_codeAffiché','4')" />
+                </div>
+                <br />
+                <div id="id_codeAffiché" name="code"></div>
+                <br />
+                <div class="BoutonCode3">
+                    <input type="button" name="Corriger" value="Corriger"
+                        onclick="supprimeChiffre('id_codeAffiché', Compteur,)" />
+                    <input type="button" name="Recommencer" value="Recommencer" onclick="videCode('id_codeAffiché')" />
+                </div>
+            </fieldset>
+            <fieldset class="Capcha">
+                <legend>
+                    <h3>
+                        Capcha
+                    </h3>
+                </legend>
+                <p>
+                <div id="id_Calcul"></div> =
+                <input type="text" id="id_CapchaDonné" name="Calcul" size="1px" />
+                <input type="button" name="NouveauCapcha" value="Nouveau" onclick="Nouveau('id_Calcul')" />
+                </p>
+            </fieldset>
+            <input type="submit" value="Connection" onclick=" return Vérification()" />
+        </form>
+    </section>
+    <footer>
+        <a href="2_galerie.xhtml">⤌ Page précédente</a>
+        <div>
+            <p>Suivez disney sur:</p>
+            <a href="https://www.facebook.com/disneyfrance"><img src="../Pages_libres/Images/facebook.png" /></a>
+            <a href="https://www.instagram.com/DisneyFR/"><img src="../Pages_libres/Images/instagram.png" /></a>
+            <a href="https://www.twitter.com/disneyfrance"><img src="../Pages_libres/Images/tweeter.png" /></a>
+            <a href="https://www.pinterest.com/DisneyFR/"><img src="../Pages_libres/Images/pinterest.png" /></a>
+            <a href="https://www.youtube.com/DisneyFR/"><img src="../Pages_libres/Images/youtube.png" /></a>
+        </div>
+        <a href="../acceuil.xhtml"> Page Suivante ⤍</a>
+    </footer>
+    <script>
+        ReinitialiserFormulaire()
+        Nouveau('id_Calcul')
+    </script>
+</body>
+
+</html>

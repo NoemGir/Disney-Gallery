@@ -1,0 +1,82 @@
+section{
+    display:flex;
+    justify-content: center;
+    column-gap: 12%
+}
+section img{
+    width:100%;
+    position:absolute;
+    z-index:auto;
+}
+
+section div{
+    z-index:2;
+    width:35%;
+    margin-top:8%;
+    color:white;
+    padding:1em;
+    background-color: rgba(0,0,0,0.7);
+    font-size:1.5vw;
+}
+
+section div:hover{
+    background-color: rgba(0,0,0,0.9)
+}
+
+section div:first-of-type{
+    transition: margin-left 1s;
+  transition-timing-function: ease-in-out;
+}
+section div:first-of-type:hover{
+    margin-left:10%;
+}
+
+section div:last-of-type{
+    transition: margin-right 1s;
+    transition-timing-function: ease-in-out;
+}
+
+section div:last-of-type:hover{
+    margin-right:10%;
+}
+
+section a{
+    text-decoration: none;
+    font-style: italic;
+    color:white;
+}
+
+section a:hover{
+    color:lightblue;
+}
+
+h2{
+    font-family: Disney;
+    font-size:3em;
+    text-align:center;
+}
+
+.Redirection{
+    display: block;
+    background: linear-gradient( #da5d38, #ffe3b0);
+    border-radius: 25px;
+    padding:7px;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    margin:5%;
+}
+
+.Redirection:hover{
+    background: linear-gradient( #df9b5c, #da5d38);
+    color:white;
+}
+
+.Redirection:active{
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+footer{
+    margin-top: 15%;
+}

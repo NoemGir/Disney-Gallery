@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Acceuil</title>
+  <script type="text/javascript" src="Pages_libres/Scripts/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="Pages_libres/Styles/style.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="Pages_libres/Styles/styleAcceuil.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="Pages_libres/Styles/AcceuilImpression.css" media="print" />
+</head>
+<body>
+  <header>
+    <h1>
+      Accueil
+    </h1>
+    <h4>
+      Site web conçu par Noémie Gireaud
+    </h4>
+    <nav>
+      <ul>
+        <li class="menu">
+          <a href="Page_imposée/Livre_Choisi/livre_v2.xhtml">Partie
+            Imposée</a>
+        </li>
+        <li class="menu">
+          <a href="">Accueil</a>
+        </li>
+        <li class="menu" onmouseover="sousMenu()" onmouseout="EnleverSousMenu()">
+          <a href="">Partie Libre</a>
+          <ul id="id_SousMenu">
+            <li>
+              <a href="Pages_libres/3_connexion.xhtml">Connexion</a>
+            </li>
+            <li>
+              <a href="Pages_libres/1_presentation.xhtml">Présentation</a>
+            </li>
+            <li>
+              <a href="Pages_libres/2_galerie.xhtml">Galerie</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <img alt="Image de Raiponse" src="Pages_libres/Images/Raiponse.jpg" />
+    <div id="Partie_Imp">
+      <h2>Partie imposée</h2>
+      <p>
+        La partie imposée représente une page d'un site web nous faisant découvrir le livre <a
+          href="https://www.babelio.com/livres/Petit-Ovnis-et-armes-secretes-americaines/1061109">Ovni et armes secrètes
+          americaines</a> écrit par <a href="https://fr.wikipedia.org/wiki/Jean-Pierre_Petit">Jean-Pierre Petit</a>.
+        Cette
+        page est exécuté avec une mise en forme <i>'grid'</i>.
+      </p>
+      <a class="Redirection" id="id_imp" href="Page_imposée/Livre_Choisi/livre_v2.xhtml"> Voir la partie imposée</a>
+    </div>
+    <div id="Partie_Lib">
+      <h2>Partie libre</h2>
+      <p>
+        La partie libre repose sur le thème de Disney, et l'étude de leur designs et personnages. Cette partie est
+        composée deux pages :
+      <ul>
+        <li>
+          Une page <i>présentation</i> où nous pouvons retrouver des informations sur Disney et une description de leur
+          projets.
+        </li>
+        <li>
+          Une page <i>galerie</i> où seront exposées une étude du caracter-design des personnages.
+        </li>
+      </ul>
+      </p>
+      <a class="Redirection" href="Pages_libres/1_presentation.xhtml">Voir la partie libre</a>
+    </div>
+  </section>
+  <footer>
+    <a href="Pages_libres/3_connexion.xhtml">⤌ Page précédente</a>
+    <div>
+      <p>Suivez disney sur:</p>
+      <a href="https://www.facebook.com/disneyfrance"><img src="Pages_libres/Images/facebook.png" /></a>
+      <a href="https://www.instagram.com/DisneyFR/"><img src="Pages_libres/Images/instagram.png" /></a>
+      <a href="https://www.twitter.com/disneyfrance"><img src="Pages_libres/Images/tweeter.png" /></a>
+      <a href="https://www.pinterest.com/DisneyFR/"><img src="Pages_libres/Images/pinterest.png" /></a>
+      <a href="https://www.youtube.com/DisneyFR/"><img src="Pages_libres/Images/youtube.png" /></a>
+    </div>
+    <a href="Pages_libres/1_presentation.xhtml"> Page Suivante ⤍</a>
+  </footer>
+</body>

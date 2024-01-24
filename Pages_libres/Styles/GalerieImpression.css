@@ -1,0 +1,21 @@
+@page { margin: 10% }
+
+header nav, footer, .Boutons{
+    display:none;
+}
+
+.conteneur{
+    display:block;
+}
+
+.TitreImage{
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+}
+
+aside p{
+    width:20cm;
+    text-align: center;
+    margin-left:0.3cm;
+}

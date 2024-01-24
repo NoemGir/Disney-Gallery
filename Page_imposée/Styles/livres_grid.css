@@ -1,0 +1,110 @@
+
+_section { background-color: lightgrey;}
+-section aside { background-color: tomato;}
+_section article { background-color: orange;}
+-footer { background-color: grey;}
+_footer div { background-color: lightgreen;}
+
+/* Positionnement des blocs */
+
+
+/* Header */
+header {
+  display : grid; 
+  grid-template-columns: 65px 1fr;
+  grid-template-rows: 100px;
+  background-color :#393939;
+  
+}
+header img { 
+  height: 100px
+}
+header h1 {
+  color: white;
+  font-family: "Crimson Text", "freeserif", serif;
+  font-size : 21.8px;
+  margin : 30px 30px 20px 30px;
+  font-weight: normal;
+}
+
+header a {
+  text-transform :uppercase;
+  color : white;
+  font-weight: bold; 
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  font-size: 8.6px;
+  padding: 20px 20px 0px 20px;
+}
+
+header nav>a:first-child{
+  border-bottom: 4px solid #FFBC23;
+}
+
+/* Section */
+section {
+  display:grid;
+  grid-template-columns: 250px 1fr ;
+}
+
+section aside { 
+  width:250px;
+  
+}
+section aside>img{
+ margin : 20px 30px 0 ;
+}
+
+section aside a>img{
+  margin : 0 19px;
+}
+section article {
+  margin-right:auto;
+  width:420px;
+  font-family: "Open-Sans", sans-serif;
+  font-size:0.75em
+  
+}
+section article h2, h3, h4, h5 {
+ 
+  font-weight: normal;
+  font-size: x-small;
+}
+section h2{ 
+  padding-top:20px
+}
+
+section article h3 {
+  color:grey
+}
+section article h3>a {
+  text-decoration: none;
+  color: black;
+}
+section article h5 {
+  border-bottom: 2px solid lightgrey; 
+}
+
+section article p {
+ font-family: "Crimson Text", "freeserif", serif;  
+  font-weight: 300;
+  color: #3B3B3B;
+  line-height: 17.55px;
+  font-size: .7rem
+}
+
+/* Footer */
+footer {
+  display : grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap:30px;
+  align-content: start;
+}
+
+footer div:first-of-type{
+  margin-left:20px;
+}
+
+footer div:last-of-type{
+  margin-right:auto;
+}

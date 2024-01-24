@@ -1,0 +1,13 @@
+@page { margin: 10% }
+
+header nav, footer{
+    display:none;
+}
+
+.titre img{
+    transform:rotate(180deg)
+}
+
+.paragrapheImg{
+    display:block;
+}

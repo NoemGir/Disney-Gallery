@@ -1,0 +1,101 @@
+
+section img{
+    width: 100%;
+    position: relative;
+    z-index:auto;
+}
+
+#DD{
+    position : absolute;
+    z-index: 2;
+    color:white;
+    padding:1em;
+    background-color: rgba(0,0,0,0.7);
+    font-size:1.5vw;
+    margin-left: 60%;
+    margin-top:-22%;
+    border-radius: 10px;
+    transition: background_color 2s;
+  transition-timing-function: ease-in-out;
+}
+
+#DD:hover{
+    background-color: rgba(0,0,0,0.9)
+}
+
+section>img+div+b{
+    position:absolute;
+    margin-top:1%;
+    margin-left:52%;
+    font-family: Disney;
+    font-size: 4vw;
+}
+
+#id_image{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin:5% 5% 5% 0;
+}
+
+.conteneur{
+    display:flex;
+    padding: 3% 0 3%;
+}
+
+.Boutons{
+    display:flex;
+    flex-direction: column;
+    width:20%;
+    border-right: grey solid 1px;
+    padding-right:3%;
+    margin-left:2%;
+    align-self:center;
+}
+
+.Boutons input{
+    margin:12% 0 12%;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top left,rgba(0, 0, 0, 0)) 10%;
+    filter:drop-shadow(9px 7px 2px rgba(0,0,0,0.2))
+}
+
+.Boutons input:hover {
+    background-color: rgb(174, 170, 238);
+}
+.Boutons input:active{
+    background-color: rgb(174, 170, 238);
+}
+
+
+.TitreImage{
+    text-align: center;
+    width:65%;
+    margin:3%;
+}
+
+.TitreImage b {
+    font-family:Disney;
+    position: relative;
+    font-size:5vw;
+    top:2%;
+}
+
+.conteneur aside {
+    font-size:1.5vw;
+    width:30%;
+    display:block;
+    text-align:justify;
+    padding-right:3%;
+    align-self:center;
+    text-indent:3vw;
+}
+
+.Chaine{
+   display:flex;
+}
+
+.Chaine img{
+    margin : 1%;
+}
